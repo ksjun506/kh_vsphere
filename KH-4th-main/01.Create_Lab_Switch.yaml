@@ -6,7 +6,7 @@
   vars_files: ./vars.yaml
 
   tasks: 
-    - name: Create Lab Standard Switch
+    - name: Create Lab Standard Switch 오둥이
       community.vmware.vmware_vswitch:
         hostname: '{{ esxi_hostname }}'
         username: '{{ esxi_username }}'
