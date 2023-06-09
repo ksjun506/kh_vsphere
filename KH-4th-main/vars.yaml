@@ -3,12 +3,12 @@ ansible_python_interpreter: /bin/python3
 student_ID: "SR"
 
 vcenter_hostname: "200.200.200.251"
-vcenter_username: "S15@vclass.kh"
+vcenter_username: "SR@vclass.kh"
 vcenter_password: "VMware1!"
 
 datacenter_name: "Datacenter"
 
-folder_prefix: "Datacenter/vm/3.Students/"
+folder_prefix: "Datacenter/vm/SR/"
 
 # SR --> esxi_host : 200.200.200.250
 
