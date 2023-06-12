@@ -45,7 +45,7 @@
         validate_certs: no
         switch: "{{ student_ID }}"
         portgroup: "{{ student_ID + '-SA-Mgmt' }}"
-        vlan_id: 10
+        vlan_id: 100
       delegate_to: localhost
 
     - name: Adding Site A Storage Portgroup
@@ -57,7 +57,7 @@
         validate_certs: no
         switch: "{{ student_ID }}"
         portgroup: "{{ student_ID + '-SA-Storage' }}"
-        vlan_id: 11
+        vlan_id: 101
       delegate_to: localhost
 
     - name: Adding Site A vMotion Portgroup
@@ -69,17 +69,7 @@
         validate_certs: no
         switch: "{{ student_ID }}"
         portgroup: "{{ student_ID + '-SA-vMotion' }}"
-        vlan_id: 12
+        vlan_id: 102
       delegate_to: localhost
 
-    - name: Adding Site A Production Portgroup
-      community.vmware.vmware_portgroup:
-        hostname: "{{ vcenter_hostname }}"
-        username: "{{ vcenter_username }}"
-        password: "{{ vcenter_password }}"
-        esxi_hostname: "{{ esxi_hostname }}"
-        validate_certs: no
-        switch: "{{ student_ID }}"
-        portgroup: "{{ student_ID + '-SA-Prod' }}"
-        vlan_id: 13
-      delegate_to: localhost
+ 
